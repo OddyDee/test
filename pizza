@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #ff6347;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .menu-item {
+            background: #fff;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex-basis: 30%;
+            text-align: center;
+        }
+        .menu-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .menu-item h3 {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Pizzeria</span> Menu</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container menu">
+        <div class="menu-item">
+            <img src="https://example.com/margherita.jpg" alt="Margherita Pizza">
+            <h3>Margherita Pizza</h3>
+            <p>Classic pizza with tomato sauce, mozzarella, and fresh basil.</p>
+            <p><strong>$8.99</strong></p>
+        </div>
+        <div class="menu-item">
+            <img src="https://example.com/pepperoni.jpg" alt="Pepperoni Pizza">
+            <h3>Pepperoni Pizza</h3>
+            <p>Spicy pepperoni with tomato sauce and mozzarella cheese.</p>
+            <p><strong>$10.99</strong></p>
+        </div>
+        <div class="menu-item">
+            <img src="https://example.com/veggie.jpg" alt="Veggie Pizza">
+            <h3>Veggie Pizza</h3>
+            <p>Loaded with bell peppers, olives, onions, and mushrooms.</p>
+            <p><strong>$9.99</strong></p>
+        </div>
+    </section>
+</body>
+</html>
